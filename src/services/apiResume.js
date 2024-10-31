@@ -8,13 +8,13 @@ export async function getResume(userEmail){
    userEmail 
   });
 
-  console.log(response)
+  // console.log(response)
   return response;
 }
 
 export async function updatePersonDetails(data){
    const res=await axios.post(`${Url}resumeupdate`,data)
-console.log(res,"I am from update data")
+// console.log(res,"I am from update data")
 return res;
 
 }
@@ -22,6 +22,6 @@ return res;
 export async function updateSummary(data){
   const res=await axios.post(`${Url}updatesummary`,data);
 
-  console.log(res,"I am from ResumeUpdate")
+  // console.log(res,"I am from ResumeUpdate")
   return res
 }

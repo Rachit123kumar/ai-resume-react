@@ -24,6 +24,7 @@ export default function AddResume() {
   const [loading, setLoading] = useState(false);
   const Url=import.meta.env.VITE_API_URL
   const naviagate=useNavigate()
+  
 
 function onCreate(){
  setLoading(true);
@@ -55,7 +56,7 @@ naviagate(`/dashboard/resume/${resumeId}/edit`)
   
   return (
     <div className="">
-      <div onClick={() => setOpenDialog(true)} className="  flex items-center justify-center bg-slate-300 h-[280px] w-[200px] rounded-lg mt-3 px-30      hover:scale-105 transition-all hover:shadow-md cursor-pointer hover:border-dotted">
+      <div onClick={() => setOpenDialog(true)} className="  flex items-center justify-center bg-slate-300 h-full w-full  rounded-lg mt-3     hover:scale-105 transition-all hover:shadow-md cursor-pointer hover:border-dotted">
         <PlusIcon />
       </div>
       <Dialog open={openDialog}>
